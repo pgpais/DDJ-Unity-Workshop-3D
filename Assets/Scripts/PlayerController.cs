@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(cam.position, cam.forward * interactRange);
         
         RaycastHit hit;
+        // Fires a ray from the camera to cam.forward + interactRange
+        // only hitting objects on the interactLayer (Button, in this case)
         if(Physics.Raycast(cam.position, cam.forward, out hit, interactRange, interactLayer)){
             hit.collider.GetComponent<Button>().Interact();
         }

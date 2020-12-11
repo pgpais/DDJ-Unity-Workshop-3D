@@ -37,10 +37,14 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update() {
+        DoAim();
+    }
+
+    
     void FixedUpdate()
     {
         DoMovement();
-        DoAim();
     }
 
     private void DoMovement()

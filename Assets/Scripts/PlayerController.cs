@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         DoMovement();
         DoAim();
@@ -57,8 +57,13 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(new Vector3(0, aimInput.x));
 
         // Rotate Camera
+
+        // Add rotation input
         mouseRot += aimInput.y;
+        // Clamp so player doesn't turn upside down
         mouseRot = Mathf.Clamp(mouseRot, -lookClamp, lookClamp);
+
+        // Get camera's rotation and change X axis
         Vector3 newRot = cam.rotation.eulerAngles;
         newRot.x = mouseRot;
         cam.rotation = Quaternion.Euler(newRot);

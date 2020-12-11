@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float movSpeed = 5f;
 
     [Header("Aiming")]
-    [SerializeField] float aimSensitivity = 0.2f;
     [SerializeField] float lookClamp = 70f;
 
     [Header("Interacting")]
@@ -54,8 +53,6 @@ public class PlayerController : MonoBehaviour
 
     private void DoAim()
     {
-        aimInput *= aimSensitivity;
-
         // Rotate Body
         transform.Rotate(new Vector3(0, aimInput.x));
 

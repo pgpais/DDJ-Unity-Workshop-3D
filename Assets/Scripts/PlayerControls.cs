@@ -25,12 +25,12 @@ public class PlayerControls : MonoBehaviour
 
     public void OnMove(CallbackContext ctx)
     {
-        controller.MovInput = ctx.ReadValue<Vector2>();
+        controller.movInput = ctx.ReadValue<Vector2>();
     }
 
     public void OnAim(CallbackContext ctx)
     {
-        controller.AimInput = ctx.ReadValue<Vector2>();
+        controller.aimInput = ctx.ReadValue<Vector2>();
     }
 
     public void OnInteract(CallbackContext ctx){

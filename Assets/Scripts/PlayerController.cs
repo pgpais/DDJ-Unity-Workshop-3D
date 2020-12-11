@@ -7,11 +7,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region Input Fields
-        public Vector2 MovInput{set => movInput = value;}
-        Vector2 movInput;
+        public Vector2 movInput;
 
-        public Vector2 AimInput{set => aimInput = value;}
-        Vector2 aimInput;
+        public Vector2 aimInput;
     #endregion
 
     [SerializeField] float movSpeed = 5f;

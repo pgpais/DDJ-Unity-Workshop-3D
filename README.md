@@ -4,4 +4,4 @@ DDJ - 2nd Workshop
 
 [Project files - Github](https://github.com/pgpais/DDJ-Unity-Workshop-3D/tree/strippedDown)
 
-[Project files - Google Drive](https://drive.google.com/drive/folders/1kmdx7HCMdQ-KBJSOjql3HMVdhirA8rKx?usp=sharing)
+[Project files - Google Drive](https://drive.google.com/file/d/1Sigk8D-_ksPPDN_xxUtgt-5bq9NIB381/view?usp=sharing)

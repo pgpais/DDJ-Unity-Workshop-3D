@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Aiming")]
     [SerializeField] float lookClamp = 70f;
+    [SerializeField] float lookSensitivity = 0.5f;
 
     [Header("Interacting")]
     [SerializeField] float interactRange = 5f;
@@ -49,6 +50,9 @@ public class PlayerController : MonoBehaviour
 
     private void DoAim()
     {
+        // Apply sensitivity
+        aimInput *= lookSensitivity;
+
         // Rotate Body
         transform.Rotate(Vector3.up * aimInput.x);
 
@@ -66,7 +70,8 @@ public class PlayerController : MonoBehaviour
         cam.rotation = Quaternion.Euler(newRot);
     }
 
-    void FixedUpdate()
+    // FixedUpdate is called on every physics loop (constant time intervals)
+    private void FixedUpdate()
     {
         DoMovement();
     }

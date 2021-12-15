@@ -87,7 +87,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 3367
+  controlID: 3863
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,8 +226,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a64f0000
-      m_LastClickedID: 20390
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 06fbffff42fbffff924f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a64f0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff00000000765000008c50000000ca9a3b
     m_RenameOverlay:
@@ -388,8 +388,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a64f0000
-    m_LastClickedInstanceID: 20390
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -721,9 +721,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.272941, y: 3.6333191, z: 15.077833}
+    m_Target: {x: 16.393648, y: -0.50773185, z: 20.268888}
     speed: 2
-    m_Value: {x: 11.272941, y: 3.6333191, z: 15.077833}
+    m_Value: {x: 16.393648, y: -0.50773185, z: 20.268888}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -770,9 +770,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.18083863, y: -0.5504524, z: 0.12355982, w: -0.805626}
+    m_Target: {x: -0.12731095, y: -0.38013008, z: 0.052913684, w: -0.9146004}
     speed: 2
-    m_Value: {x: -0.18083857, y: -0.55045223, z: 0.12355977, w: -0.8056257}
+    m_Value: {x: -0.1273109, y: -0.38012993, z: 0.052913666, w: -0.9146001}
   m_Size:
     m_Target: 10
     speed: 2
@@ -786,9 +786,9 @@ MonoBehaviour:
     m_SpeedNormalized: 0.5
     m_SpeedMin: 0.001
     m_SpeedMax: 2
-    m_EasingEnabled: 1
+    m_EasingEnabled: 0
     m_EasingDuration: 0.4
-    m_AccelerationEnabled: 1
+    m_AccelerationEnabled: 0
     m_FieldOfViewHorizontalOrVertical: 60
     m_NearClip: 0.03
     m_FarClip: 10000
@@ -846,8 +846,8 @@ MonoBehaviour:
     y: 752
     width: 1229
     height: 235
-  m_MinSize: {x: 602, y: 321}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 600, y: 300}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 15}

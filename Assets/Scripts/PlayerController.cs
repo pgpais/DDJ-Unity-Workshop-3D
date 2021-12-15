@@ -81,6 +81,9 @@ public class PlayerController : MonoBehaviour
         Vector3 forward = transform.forward * movInput.y;
         Vector3 right = transform.right * movInput.x;
 
+        // In some cases (like FPSs) you don't want to change velocity like this.
+        // It's a very sudden change and can cause jittering.
+        // In those cases, look up damping. (lerping can also work, but it is intended for different cases)
         rb.velocity = (forward + right) * movSpeed + new Vector3(0, rb.velocity.y);
     }
 

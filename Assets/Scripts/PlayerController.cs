@@ -55,8 +55,7 @@ public class PlayerController : MonoBehaviour
         // Rotate Camera
 
         // Add rotation input
-        // It's important to multiply by Time.deltaTime here, so aiming is independent of framerate
-        mouseRot += aimInput.y * Time.deltaTime;
+        mouseRot += aimInput.y;
 
         // Clamp so player doesn't turn upside down
         mouseRot = Mathf.Clamp(mouseRot, -lookClamp, lookClamp);
@@ -77,8 +76,6 @@ public class PlayerController : MonoBehaviour
         Vector3 forward = transform.forward * movInput.y;
         Vector3 right = transform.right * movInput.x;
 
-        // Since this happens in the FixedUpdate function, you don't need to multiply by Time.DeltaTime
-        // If you want to, however, you can use Time.fixedDeltaTime (althought it is a constant)
         rb.velocity = (forward + right) * movSpeed + new Vector3(0, rb.velocity.y);
     }
 

@@ -250,7 +250,6 @@ GameObject:
   - component: {fileID: 324799882}
   - component: {fileID: 324799881}
   - component: {fileID: 324799880}
-  - component: {fileID: 324799878}
   - component: {fileID: 324799879}
   m_Layer: 8
   m_Name: Button
@@ -274,28 +273,6 @@ Transform:
   m_Father: {fileID: 680492413}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &324799878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324799876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e642abda244964d95c1c190bc9fc6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonPressed:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 690228356}, m_TargetAssemblyTypeName: , m_MethodName: Shoot, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
-  eventInterval: 0.5
-  isOn: 0
-  anim: {fileID: 0}
 --- !u!95 &324799879
 Animator:
   serializedVersion: 4
@@ -693,7 +670,6 @@ GameObject:
   - component: {fileID: 690228354}
   - component: {fileID: 690228353}
   - component: {fileID: 690228352}
-  - component: {fileID: 690228356}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -780,21 +756,6 @@ Transform:
   m_Father: {fileID: 680492413}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &690228356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690228351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c1263ff70db5f44b639737f539fbd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3293375870295861783, guid: 9dec55e98580f394bbba20b7e01f0dbb,
-    type: 3}
-  shootingPoint: {fileID: 582676483}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

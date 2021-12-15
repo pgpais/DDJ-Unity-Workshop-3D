@@ -55,7 +55,9 @@ public class PlayerController : MonoBehaviour
         // Rotate Camera
 
         // Add rotation input
-        mouseRot += aimInput.y;
+        // It's important to multiply by Time.deltaTime here, so aiming is independent of framerate
+        mouseRot += aimInput.y * Time.deltaTime;
+
         // Clamp so player doesn't turn upside down
         mouseRot = Mathf.Clamp(mouseRot, -lookClamp, lookClamp);
 
